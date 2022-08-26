@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: whale
+  labels:
+     app: demoApp
+spec:
+  containers:
+    - name: nginx-server
+      image: hcwxd/kubernetes-demo 
+      ports:
+        - containerPort: 3000
